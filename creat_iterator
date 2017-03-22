@@ -7,9 +7,14 @@ int main()
 {
 	std::vector<int> vec {0,1,2,3,4,5,6,7,8,9}; // create a vector of integer numbers
 
-	std::cout<< "the vector contain :";
-
-	for (std::vector<int>::iterator it=vec.begin(); it!= v.end();++it)
+	std::cout<< "the vector contain :";//show the different number of the vector
+/*
+std::vector<int>::iterator it = vec.begin() ==> creat an iterator it and intiate it in the begining of the vector with vec.begin()
+it != vec.end() ==> this instruction compared the actual value of it with the last value gived by vec.end()
+++it ==> it = it + 1
+*it ==> show the value pointed by the iterator it 
+**/
+	for (std::vector<int>::iterator it=vec.begin(); it!= vec.end();++it) 
 	{
 		std::cout << ' ' << *it;
 	}
