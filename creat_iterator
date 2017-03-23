@@ -18,6 +18,14 @@ it != vec.end() ==> this instruction compared the actual value of it with the la
 	{
 		std::cout << ' ' << *it;
 	}
+/*
+If you want to print the different elts of vec from the end to the begining you will use reverse_iterator, vec.rbegin() and vec.rend()
+**/
+	std::cout<< "the reverse vector :";
+	for(std::vector<int>::reverse_iterator it = vec.rbegin() ; it != vec.rend() ; ++it)
+	{
+		std::cout << ' ' << *it;
+	}
 
 	return 0;
 }
